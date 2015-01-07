@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+ $body-bg: #9b59b6;
+ $navbar-inverse-bg: #9b59b6;
+ $navbar-default-link-color: black;
+ $brand-primary: #34495e;
+ $jumbotron-bg: #ecf0f1;
+ @import 'bootstrap';
