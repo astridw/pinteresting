@@ -1,5 +1,8 @@
 <div class="jumbotron center">
 <h1>Welcome To Pinteresting</h1>
-<p>If you want to join, <%= link_to "Sign up Here!", "#", class: "btn btn-primary btn-lg" %></p>
-<p>Already a member? Simply, <%= link_to "Login Here!", "#", class: "btn btn-primary btn-lg" %></p>
+ <% if user_signed_in? %>
+  <% else %>
+    <p>If you want to join, <%= link_to "Sign up Here!", new_user_registration_path, class: "btn btn-primary btn-lg" %></p>
+    <p>Already a member? Simply, <%= link_to "Login Here!",  new_user_session_path, class: "btn btn-primary btn-lg" %></p>
+ <% end %>
 </div>
